@@ -39,6 +39,7 @@
   "scripts": {
     "dev": "NODE_ENV=development tsx server/index.ts",
     "build": "tsx script/build.ts",
+    "prepare": "npm run build",
     "prepublishOnly": "npm run build",
     "build:docs": "mkdir -p docs/assets && tailwindcss -c docs/tailwind.config.cjs -i docs/src/input.css -o docs/assets/landing.css --minify",
     "build:public-docs": "tsx script/build-public-docs.ts",
